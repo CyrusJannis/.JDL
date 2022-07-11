@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* 
+
+Navbar & Co.
+
+*/
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+  background-color: #222;
+}
+.navbar.sticky{
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logo{
+  font-size: 35px;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.cancel-btn{
+    color:rgb(0, 0, 0);
+}
+.menu-list li a{
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+.banner{
+  background: url("banner.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  padding: 30px 0;
+  padding-top: 11%;
+}
+
+.icon{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.cancel-btn{
+    display: none;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+  .cancel-btn{
+    display: none;
+}
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+  .cancel-btn{
+    display: none;
+}
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+  .cancel-btn{
+    display: none;
+}
+}
+@media (max-width: 868px) {
+  .darkmode{
+    position: absolute;
+    margin-left: 41%;
+  }
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0px;
+    display: block;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    transition: all 1.0s ease;
+  }
+  .menu-list.active{
+    background:#222;
+  }
+  .item1.active{
+    color: white;
+  }
+  .item2.active{
+    color: white;
+  }
+  .item3.active{
+    color: white;
+  }
+  .item4.active{
+    color: white;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .menu-li{
+    padding-top: 25%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 33px;
+    margin-left: -100%;
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: rgb(0, 0, 0);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+  .cancel-btn{
+    display: block;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+  .about{
+    padding: 30px 0;
+    padding-top: 25%;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
+}
+
+
+
+
+
+
+
+/* 
+
+Text & Co.
+
+*/
+
+
+.about .title{
+  font-size: 58px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 7%;
+}
+.middletext{
+  font-size: 20px;
+  font-weight: 500;
+}
+.image1{
+  height: auto;
+  width: 81%;
+  margin-right: 19%;
+  padding-left: 0;
+  padding-top: 1%;
+}
+.unterüberschrift{
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+
+
+/*
+
+Light / Dark Theme switch
+
+*/
+
+
+@media (min-width: 868px) {
+  .darkmode{
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+  }
+}
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #353535;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #353535;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+body.active{
+  background: black;
+}
+.title.active{
+  color: white;
+}
+.text1.active{
+  color: white;
+}
+.text2.active{
+  color: white;
+}
+.text3.active{
+  color: white;
+}
+.text4.active{
+  color: white;
+}
+.text5.active{
+  color: white;
+}
+.text6.active{
+  color: white;
+}
+.text7.active{
+  color: white;
+}
+.text8.active{
+  color: white;
+}
+.text9.active{
+  color: white;
+}
+.text10.active{
+  color: white;
+}
