@@ -111,8 +111,11 @@ Navbar & Co.
     background-color: white;
     color: rgb(34, 34, 34);
     font-weight: bolder;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+.blue{
+  color:#007bff
 }
 .bigimage{
     background: url("C:/Users/Jannis Dietrich/OneDrive/Dokumente/.JDL/images/chicago.jpg");
