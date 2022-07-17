@@ -14,6 +14,15 @@ Navbar & Co.
 ::selection{
   background: rgb(0,123,255,0.3);
 }
+body {
+    width: 100vw;
+}
+p  {
+    width: 99vw;
+}
+a  {
+    width: 99vw;
+}
 .content{
   max-width: 1250px;
   margin: auto;
@@ -94,7 +103,10 @@ Navbar & Co.
     display: none;
 }
 
-
+.impressum{
+    padding: 2%;
+    padding-top: 7%;
+}
 
 .biglogo{
     background: transparent;
@@ -193,6 +205,17 @@ Navbar & Co.
 }
 }
 @media (max-width: 868px) {
+
+    .impressum{
+        padding: 2%;
+        padding-top: 7%;
+        word-break: break-all;
+        word-wrap: break-word;
+        margin-right:  5%;
+    }
+    .bb1{
+        margin-top: 5%;
+    }
   .darkmode{
     position: absolute;
     margin-left: 41%;
@@ -272,7 +295,3 @@ Navbar & Co.
 }
 
 
-.impressum{
-    padding: 2%;
-    padding-top: 7%;
-}

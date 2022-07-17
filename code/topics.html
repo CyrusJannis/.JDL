@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JLD</title>
+    <link rel="stylesheet" href="topics.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./topics.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#">JDL</a>
+        </div>
+        <ul class="menu-list" id="menu-list">
+          <div class="cancel-btn">
+            <i class="fas fa-2x fa-times"></i>
+          </div>
+          <li class="menu-li"><a href="#">Home</a></li>
+          <li class="item1" id="item1"><a href="#">About</a></li>
+          <li class="item2" id="item2"><a href="#">Topics</a></li>
+          <li class="item3" id="item3"><a href="#">Popular Articles</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <h1 class="topicstext">TOPICS</h1>
+    <p class="popular-articles-text">Popular topics</p>
+    <div class="flex">
+        <div class="card1 card22">
+            <img src="C:/Users/Jannis Dietrich/OneDrive/Dokumente/.JDL/images/desktop.jpg" alt="desktop" style="width:100%; height: 75%;">
+            <div class="container">
+            <h2><b>Desktop</b></h2>
+            </div>
+        </div>
+        <div class="card1 card20">
+            <img src="C:/Users/Jannis Dietrich/OneDrive/Dokumente/.JDL/images/mobile.jpg" alt="mobile" style="width:100%; height: 75%;">
+            <div class="container">
+            <h2><b>Mobile</b></h2>
+            </div>
+        </div>
+        <div class="card1 card21">
+            <img src="C:/Users/Jannis Dietrich/OneDrive/Dokumente/.JDL/images/kopfhörer.jpg" alt="headphones" style="width:100%; height: 75%;">
+            <div class="container">
+            <h2><b>Headphones</b></h2>
+            </div>
+        </div>
+    </div>
+    <p class="popular-articles-text">Other topics</p>
+    <p class="coming-soon-text">Comin soon...</p>
+      
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY >= 0 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+  </body>
+</html>

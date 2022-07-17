@@ -107,10 +107,6 @@ Navbar & Co.
   opacity: 70%;
   width: 100%;
 }
-.biglogotext{
-  padding-top: 3.5%;
-  padding-bottom: 3.5%;
-}
 .iud {
   text-align: center;
   font-size: 80px;
@@ -150,7 +146,7 @@ Navbar & Co.
   color: rgb(34, 34, 34);
   font-weight: bolder;
   padding-top: 3%;
-  padding-bottom: 0%;
+  padding-bottom: 3%;
   width: 100%;
 }
 .patext2 {
@@ -172,7 +168,7 @@ Navbar & Co.
 }
 .impressum-datenschutz-banner {
   background-color: white;
-  padding-top: 0%;
+  padding-top: 15%;
   text-align: center;
 }
 .impressumd {
@@ -182,6 +178,59 @@ Navbar & Co.
 .impressum-datenschutz-banner:hover {
   cursor: pointer;
 }
+.topicstext{
+    padding-top: 10%;
+    text-align: center;
+    font-size: 50px;
+}
+.popular-articles-text{
+    text-align: center;
+    font-size: 30px;
+    margin-top:  2%;
+}
+.coming-soon-text{
+    text-align: center;
+    font-size: 25px;
+    margin-top:  2%;
+}
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 400px;
+    height: 350px;
+    margin-top: 2%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.card1:hover{
+    cursor: pointer;
+}
+.card20:hover{
+    width: 420px;
+    height: 368px;
+}
+.card21:hover{
+    width: 420px;
+    height: 368px;
+}
+.card22:hover{
+    width: 420px;
+    height: 368px;
+}
+.card1 h2{
+    text-align: center;
+    margin-top: 4%;
+}
+.flex{
+    display: flex;
+}
+.card22{
+    margin-left: 15%;
+}
+.card21{
+    margin-right: 15%;
+}
+  
 @media (max-width: 1230px) {
   .content {
     padding: 0 60px;
@@ -219,10 +268,7 @@ Navbar & Co.
   .icon.hide {
     display: none;
   }
-  .biglogotext{
-    padding-top: 3.5%;
-    padding-bottom: 3.5%;
-  }
+
   .navbar .menu-list {
     position: fixed;
     height: 100vh;
@@ -293,27 +339,22 @@ Navbar & Co.
   }
   .patext2{
     font-size: 20px;
-    margin-bottom: 0;
-    padding-bottom: 0;
   }
   .patext{
     font-size: 29px;
-    margin-top:  10%;
+    margin-top:  5%;
   }
   .aboutustext{
     font-size: 29px;
-    padding-top: 10%;
+    padding-top: 5%;
   }
   .aboutustext2{
     font-size: 20px;
-    padding-bottom: 10%;
-  }
-  .pa{
-    margin-bottom: 0;
+    padding-bottom: 5%;
   }
   .impressum-datenschutz-banner{
-    margin-top:  0;
-    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 380px) {

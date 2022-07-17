@@ -64,12 +64,30 @@
     <br />
     <br />
     <br />
-    <br />
     <div class="impressum-datenschutz-banner">
       <p>
-        <a href="./impressum.html">Impressum</a> |
-        <a href="./datenschutz.html">Datenschutz</a>
+        <a class="impressumd" href="./impressum.html">Impressum</a> |
+        <a class="impressumd" href="./datenschutz.html">Datenschutz</a>
       </p>
     </div>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      }
+      cancelBtn.onclick = ()=>{
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      }
+      window.onscroll = ()=>{
+        this.scrollY >= 0 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+      }
+    </script>
   </body>
 </html>
