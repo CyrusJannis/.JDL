@@ -87,7 +87,9 @@ a  {
   padding: 30px 0;
   padding-top: 11%;
 }
-
+.bb1{
+    padding-top: 5%;
+}
 .icon{
   color: rgb(255, 255, 255);
   font-size: 20px;
@@ -268,7 +270,7 @@ a  {
   .navbar .menu-list li a{
     font-size: 33px;
     margin-left: -100%;
-    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 1.0s ease;
     color: rgb(0, 0, 0);
   }
   .navbar.show .menu-list li a{

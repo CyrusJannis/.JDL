@@ -27,6 +27,9 @@ Navbar & Co.
   transition: all 0.3s ease;
   background-color: #222;
 }
+.bb1{
+  padding-top: 20%;
+}
 .navbar.sticky{
   background: #1b1b1b;
   padding: 10px 0;
@@ -245,7 +248,7 @@ Navbar & Co.
   .navbar .menu-list li a{
     font-size: 33px;
     margin-left: -100%;
-    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 1s ease;
     color: rgb(0, 0, 0);
   }
   .navbar.show .menu-list li a{

@@ -230,7 +230,10 @@ Navbar & Co.
 .card21{
     margin-right: 15%;
 }
-  
+.impressum-datenschutz-banner{
+    margin-top: 9%;
+}
+
 @media (max-width: 1230px) {
   .content {
     padding: 0 60px;
@@ -268,7 +271,9 @@ Navbar & Co.
   .icon.hide {
     display: none;
   }
-
+  .impressum-datenschutz-banner{
+    margin-top: 100%;
+    }
   .navbar .menu-list {
     position: fixed;
     height: 100vh;
